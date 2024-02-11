@@ -1,0 +1,471 @@
+  @font-face {
+    font-family: "conthrax-regular";
+    src: url("fonts/ConthraxSb-Regular.ttf");
+}
+
+@font-face {
+    font-family: "gilroy-light";
+    src: url("fonts/Gilroy-Light.ttf");
+}
+
+@font-face {
+    font-family: "gilroy-regular";
+    src: url("fonts/Gilroy-Regular.ttf");
+}
+
+@font-face {
+    font-family: "gilroy-medium";
+    src: url("fonts/Gilroy-Medium.ttf");
+}
+
+@font-face {
+    font-family: "gilroy-semibold";
+    src: url("fonts/Gilroy-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "gilroy-bold";
+    src: url("fonts/Gilroy-Bold.ttf");
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+
+.mainNavbarClass {
+    background: linear-gradient(270deg, #eca815 20%, #4d4d4d 80%);
+    transition: all ease 0.3s;
+}
+
+.logo-button-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.nav_container img {
+       height: 45px;
+}
+
+.button_container {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.button_container span {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin-bottom: 4px;
+    border-radius: 5px;
+}
+
+#menu {
+    display: none;
+}
+
+
+.home-header {
+    height: 775px;
+    width: 100%;
+    background: url("../assets/home-header-bg.webp"), linear-gradient(rgba(0, 0, 0), rgba(0, 0, 0));
+    background-position: center, center;
+    background-size: cover, cover;
+    background-repeat: no-repeat, no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #161616;
+    box-shadow: 0px 20px 10px #161616;
+}
+
+.home-header-left {
+    height: 775px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.home-header-left h1 {
+    color: #fff;
+    font-family: 'conthrax-regular';
+    font-weight: 600;
+    font-size: 45px;
+    text-transform: capitalize;
+}
+
+.home-header-left h1 span {
+    font-size: 40px;
+}
+
+.home-header-left p {
+    color: #fff;
+    font-family: 'gilroy-light';
+    font-size: 20px;
+    margin: 20px 0px;
+}
+
+
+.home-header-right {
+    height: 775px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.home-header-right img {
+    height: 266px;
+    width: 240px;
+    margin-left: 215px;
+    margin-top: -70px;
+}
+
+.home-header-right h1 span {
+    font-size: 40px;
+}
+
+.home-header-right p {
+    color: #fff;
+    font-family: 'gilroy-light';
+    font-size: 20px;
+    margin: 20px 0px;
+}
+
+
+.home-header-button,
+.offer-button,
+.contact-form-submit {
+    color: #fff;
+    font-family: 'gilroy-light';
+    font-size: 18px;
+    background-color: #FFA910;
+    border: 2px solid #FFA910;
+    outline: none;
+    padding: 10px 24px;
+    transition: all ease-in-out 0.3s;
+}
+
+.home-header-button:hover,
+.offer-button:hover,
+.contact-form-submit:hover {
+    color: #FFA910;
+    background-color: #0000;
+}
+
+button.home-header-button i.fas.fa-long-arrow-alt-right,
+button.contact-form-submit i.fas.fa-long-arrow-alt-right {
+    margin-left: 10px;
+    width: 20px;
+    height: auto;
+}
+
+img.leg-left {
+    position: absolute;
+    top: 0%;
+    left: -8%;
+}
+
+
+.what-we {
+    height: 900px;
+    width: 100%;
+    background: url("../assets/circle-offer.webp"), url("../assets/offer-bg2.webp");
+    background-position: 40% 85%, bottom center;
+    background-size: 20%, cover;
+    background-repeat: no-repeat, no-repeat;
+    position: relative;
+}
+
+.what-we-left,
+.offer-right {
+    height: 900px;
+    width: 100%;
+}
+
+.what-we {
+    padding-top: 15%;
+}
+
+.what-we h1 {
+    color: #FFA910;
+    font-family: 'gilroy-bold';
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.what-we h2 {
+    color: #fff;
+    font-family: 'conthrax-regular';
+    font-size: 35px;
+    position: relative;
+    line-height: 50px;
+}
+
+.what-we-right img {
+    height: 300px;
+    width: 287px;
+    margin-left: 215px;
+    margin-top: -70px;
+}
+
+
+.what-we-right p {
+    font-family: 'gilroy-light';
+    color: #fff;
+    font-size: 18px;
+    margin: 20px 0px;
+    margin-top: 83px;
+}
+
+
+
+
+.marketing {
+    height: 500px;
+    width: 100%;
+    background: url("../assets/marketing.webp");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 99;
+}
+
+.marketing .marketing-parent {
+    position: relative;
+}
+
+.marketing-content {
+    height: 500px;
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.marketing-content .marketing-spider-bg {
+    height: 200px;
+    width: 200px;
+}
+
+.marketing-content .marketing-spider {
+    height: 200px;
+    width: 200px;
+}
+
+.marketing-content p {
+    color: #FFF;
+    text-align: center;
+    font-family: 'gilroy-light';
+    font-size: 18px;
+}
+
+.marketing-content h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: 'conthrax-regular';
+    font-size: 40px;
+    margin-bottom: 3%;
+}
+
+.marketing-circle-bg {
+    position: absolute;
+    height: 240px;
+    width: 240px;
+    top: 0;
+}
+
+.marketing-spider-bg {
+    position: absolute;
+    height: 190px;
+    width: 240px;
+    top: 16%;
+}
+
+.design-2-marketing {
+    position: absolute;
+    height: 160px;
+    width: 160px;
+    top: 0;
+    right: 0;
+}
+
+.design-1-marketing {
+    position: absolute;
+    height: 160px;
+    width: 160px;
+    bottom: 0;
+    left: 10%;
+}
+
+.client_say{
+    width: 100%;
+    background: linear-gradient(270deg, #eca815 20%, #4d4d4d 80%);
+    /* background-color: #745c5c; */
+    position: relative;
+}
+
+.client_say_content{
+    padding: 4% 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.client_say_content h1{
+    color: #fff;
+    font-size: 40px;
+    font-family: 'conthrax-regular';
+    text-align: center;
+    padding: 4% 0;
+    text-transform: capitalize;
+}
+
+.footer{
+    background-image: url(../assets/footer-bg.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 3% 0px 3% 0px;
+    border-top: 1px solid #161616;
+    box-shadow: 0px -10px 10px #161616;
+}
+
+.logo_pages,
+.content_icons,
+.copyright {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.content_icons {
+    align-items: start;
+}
+
+.content_icons,
+.copyright {
+    justify-content: space-between;
+}
+
+.footer_logo img {
+    height: 60px;
+    width: 200px;
+}
+
+.pages {
+    margin-top: 18px;
+    margin-left: -61px;
+}
+
+.pages ul {
+    margin-left: 50px;
+}
+
+.pages ul li {
+    display: inline-block;
+}
+
+.pages ul li {
+    margin: 0px 15px;
+    font-family: 'gilroy-light';
+    font-size: 18px;
+}
+
+.pages ul li a {
+    color: #fff;
+    transition: all ease 0.3s;
+    text-decoration: none;
+
+}
+
+.pages ul li a:hover {
+    color: #FFA910;
+}
+
+.footer_content {
+    width: 55%;
+}
+
+.content_icons {
+    margin-top: 40px;
+}
+
+.footer_content h2 {
+    color: #fff;
+    font-family: 'conthrax-regular';
+    font-size: 35px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.footer_content p {
+    color: #fff;
+    font-family: 'gilroy-light';
+    font-size: 16px;
+    width: 55%;
+}
+
+.footer-icons i {
+    color: #fff;
+    font-size: 32px;
+    height: 50px;
+    width: 50px;
+    padding: 8px 12px;
+    transition: all ease 0.3s;
+    margin: auto;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-icons a {
+    height: 50px;
+    width: 50px;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-icons a :hover {
+    color: #FFA910;
+    background-color: #fff;
+}
+
+.footer-button button.home-header-button {
+    background-color: #fff;
+    color: #000;
+    border-color: #fff;
+}
+
+.footer-button button.home-header-button:hover {
+    background-color: transparent;
+    color: #fff;
+    border-color: #fff;
+}
+
+.copy-right p {
+    color: #fff;
+    font-family: 'gilroy-light';
+    font-size: 16px;
+    margin: 0px;
+}
+
+/* End Footer Css */
